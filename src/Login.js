@@ -1,58 +1,44 @@
-// Signup.js
+// Login.js
 import React, { useState } from 'react';
-import './App.css';
 
-const Signup = () => {
-  const [username, setUsername] = useState('');
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle signup logic here
-    console.log('Signup submitted:', username, email, password);
+    // Handle login logic here
+    console.log('Login submitted:', email, password);
   };
 
   return (
     <div>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <br/>
-        <h2>Signup</h2>
         <div>
-          <input
-            type="text"
-            value={username}
-            placeholder='Username'
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div>
+          <label>Email:</label>
           <input
             type="email"
             value={email}
-            placeholder='Email'
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
         <div>
+          <label>Password:</label>
           <input
             type="password"
             value={password}
-            placeholder='Password'
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <br />
         <div>
-          <button type="submit">Sign Up</button>
+          <button type="submit">Login</button>
         </div>
-        <p>Don't have an account?</p>
       </form>
     </div>
   );
 };
 
-export default Signup;
+export default Login;
