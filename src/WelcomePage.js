@@ -1,10 +1,11 @@
 // src/WelcomePage.js
 import React from 'react';
+import 
 
 function WelcomePage() {
   return (
     <div className="welcome-page">
-      <img src="payment" alt="Welcome" />
+      <img src="./assets" alt="Welcome" />
     </div>
   );
 }
