@@ -6,7 +6,8 @@ function WelcomePage() {
     <div className="welcome-page">
       <img src="/images/banner-human.png" alt="Welcome" />
       <div className="hero-text">
-      <button>Get Srarted</button>
+
+      <button>Get Started</button>
       </div>
     </div>
   );
