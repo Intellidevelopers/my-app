@@ -1,11 +1,13 @@
 // src/WelcomePage.js
 import React from 'react';
-import 
 
 function WelcomePage() {
   return (
     <div className="welcome-page">
-      <img src="./assets" alt="Welcome" />
+      <img src="/images/banner-human.png" alt="Welcome" />
+      <div className="hero-text">
+      <button>Get Srarted</button>
+      </div>
     </div>
   );
 }
