@@ -17,7 +17,7 @@ function SplashScreen() {
 
   return (
     <div className={`splash-screen ${hideSplash ? 'hidden' : ''}`}>
-      <img src="./banner-human.png" alt='imsplsh'/>
+      <img src="./assets/banner-human.png" alt='imsplsh'/>
     </div>
   );
 }
